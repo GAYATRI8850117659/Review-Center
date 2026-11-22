@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf9f6;
+    color: #242424;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}
+
+.logo span {
+    color: #bc805c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 24px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #bc805c;
+}
+
+.hero {
+    text-align: center;
+    padding: 105px 20px;
+    background: #eee6dc;
+}
+
+.eyebrow {
+    color: #a16c4d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    background: #252525;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.button:hover {
+    background: #a16c4d;
+}
+
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.section-desc {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.store-card {
+    display: block;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #eee;
+    transition: 0.25s;
+}
+
+.store-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.brand {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.amazon {
+    color: #232f3e;
+}
+
+.amazon span {
+    color: #ff9900;
+    font-size: 35px;
+}
+
+.flipkart {
+    color: #2874f0;
+}
+
+.flipkart span {
+    color: #ffc200;
+}
+
+.myntra {
+    color: #ed2f68;
+    font-weight: 800;
+}
+
+.meesho {
+    color: #9b35a6;
+    font-weight: 800;
+}
+
+.store-card h3 {
+    margin-bottom: 8px;
+}
+
+.store-card p {
+    font-size: 13px;
+    color: #777;
+    min-height: 62px;
+}
+
+.read-link {
+    display: inline-block;
+    color: #a16c4d;
+    font-size: 13px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.blog-preview {
+    background: #f0ebe3;
+    text-align: center;
+}
+
+.blog-preview p {
+    color: #666;
+}
+
+footer {
+    background: #242424;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer p {
+    color: #ccc;
+    margin-top: 8px;
+}
+
+.page-content {
+    max-width: 950px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.page-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.page-content h2 {
+    margin: 30px 0 10px;
+}
+
+.page-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.review-box, .blog-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+}
+
+.blog-form {
+    display: grid;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.blog-form input,
+.blog-form textarea {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font: inherit;
+    width: 100%;
+}
+
+.blog-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.blog-form button {
+    background: #252525;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .store-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .store-grid {
+        grid-template-columns: 1fr;
+    }
+}
